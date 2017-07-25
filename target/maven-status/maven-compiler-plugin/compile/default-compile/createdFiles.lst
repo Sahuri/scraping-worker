@@ -1,0 +1,8 @@
+casper\util\HibernateUtil.class
+casper\model\ResScraping.class
+casper\dao\DataScripingDao.class
+casper\model\DataScraping.class
+casper\util\ExecuteCommand.class
+casper\app\ScheduledTasks$1.class
+casper\app\Application.class
+casper\app\ScheduledTasks.class
