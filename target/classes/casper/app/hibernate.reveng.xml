@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<type-mapping>
+		<sql-type jdbc-type="INTEGER" hibernate-type="int"></sql-type>
+		<sql-type jdbc-type="TIMESTAMP" hibernate-type="timestamp"
+			length="23">
+		</sql-type>
+		<sql-type jdbc-type="VARCHAR" hibernate-type="string"
+			length="50">
+		</sql-type>
+		<sql-type jdbc-type="DECIMAL" hibernate-type="java.lang.Long"
+			precision="18">
+		</sql-type>
+	</type-mapping>
+
+	<table-filter match-catalog="Compared" match-schema="dbo"
+		match-name="SCRAPING" />
+	<table catalog="Compared" schema="dbo" name="SCRAPING"
+		class="DataScraping">
+		<column name="ID"></column>
+		<column name="KODEPOS"></column>
+		<column name="PRICE"></column>
+		<column name="ADDRESS"></column>
+		<column name="AREA"></column>
+		<column name="OTA"></column>
+		<column name="ROOM"></column>
+		<column name="HOTEL"></column>
+		<column name="SCRAPINGDATE"></column>
+	</table>
+	<table catalog="" schema="" name="TABLE_0"></table>
+</hibernate-reverse-engineering>

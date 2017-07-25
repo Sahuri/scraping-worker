@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 24, 2017 9:44:07 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="casper.model.ResScraping" table="RESSCRAPING">
+        <id name="Hotel" type="java.lang.String">
+            <column name="HOTEL" />
+            <generator class="assigned" />
+        </id>
+        <property name="Price" type="double">
+            <column name="PRICE" />
+        </property>
+    </class>
+</hibernate-mapping>

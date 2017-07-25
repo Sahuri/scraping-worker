@@ -26,7 +26,7 @@ public class ScheduledTasks {
 
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(cron = "0 0 14,19 * * *")
     public void reportCurrentTime() throws JsonParseException, JsonMappingException, IOException {
     	int i=0;
         DataScripingDao ao=new DataScripingDao();
