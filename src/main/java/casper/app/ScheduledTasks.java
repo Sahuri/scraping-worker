@@ -13,8 +13,8 @@ import org.springframework.stereotype.Component;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import casper.dao.DataScripingDao;
-import casper.model.DataScraping;
+import casper.dao.ScripingDao;
+import casper.model.Scraping;
 import casper.model.ResScraping;
 import casper.util.ExecuteCommand;
 
@@ -26,15 +26,15 @@ public class ScheduledTasks {
 
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-    @Scheduled(cron = "0 0 14,19 * * *")
+    @Scheduled(fixedRate =5000)
     public void reportCurrentTime() throws JsonParseException, JsonMappingException, IOException {
     	int i=0;
-        DataScripingDao ao=new DataScripingDao();
-        DataScraping d;
+        ScripingDao ao=new ScripingDao();
+        Scraping d;
         
     	log.info("The time is now {}", dateFormat.format(new Date()));
         String path = System.getProperty("user.dir");
-        path=path+"\\Scripts\\scrap.js";
+        path=path+"//Scripts//scrap.js";
         ExecuteCommand cmd=new ExecuteCommand("casperjs "+path);
         String res= cmd.run();
         if (res=="not elements") {
@@ -45,7 +45,7 @@ public class ScheduledTasks {
 	        List<ResScraping> h= mapper.readValue(res, new TypeReference<List<ResScraping>>(){});
 	        
 	        for (ResScraping resScraping : h) {
-	        	d=new DataScraping();
+	        	d=new Scraping();
 	        	d.setHotel(resScraping.getHotel());
 	        	d.setPrice(resScraping.getPrice());
 	        	d.setScrapingDate(new Date());

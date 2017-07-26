@@ -1,7 +1,7 @@
-C:\Users\user\eclipse-workspace\CasperWorker\src\main\java\casper\dao\DataScripingDao.java
-C:\Users\user\eclipse-workspace\CasperWorker\src\main\java\casper\model\ResScraping.java
-C:\Users\user\eclipse-workspace\CasperWorker\src\main\java\casper\model\DataScraping.java
-C:\Users\user\eclipse-workspace\CasperWorker\src\main\java\casper\util\HibernateUtil.java
-C:\Users\user\eclipse-workspace\CasperWorker\src\main\java\casper\app\ScheduledTasks.java
-C:\Users\user\eclipse-workspace\CasperWorker\src\main\java\casper\app\Application.java
-C:\Users\user\eclipse-workspace\CasperWorker\src\main\java\casper\util\ExecuteCommand.java
+/media/sahuri/Acer/Users/user/eclipse-workspace/CasperWorker/src/main/java/casper/model/ResScraping.java
+/media/sahuri/Acer/Users/user/eclipse-workspace/CasperWorker/src/main/java/casper/app/ScheduledTasks.java
+/media/sahuri/Acer/Users/user/eclipse-workspace/CasperWorker/src/main/java/casper/dao/ScripingDao.java
+/media/sahuri/Acer/Users/user/eclipse-workspace/CasperWorker/src/main/java/casper/app/Application.java
+/media/sahuri/Acer/Users/user/eclipse-workspace/CasperWorker/src/main/java/casper/util/ExecuteCommand.java
+/media/sahuri/Acer/Users/user/eclipse-workspace/CasperWorker/src/main/java/casper/util/HibernateUtil.java
+/media/sahuri/Acer/Users/user/eclipse-workspace/CasperWorker/src/main/java/casper/model/Scraping.java

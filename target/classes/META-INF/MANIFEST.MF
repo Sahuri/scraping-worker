@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: CasperWorker
 Implementation-Version: 0.1.0
-Built-By: M. Danendra Abqori
+Built-By: sahuri
 Implementation-Vendor-Id: org.springframework.casperjs
-Build-Jdk: 1.8.0_101
+Build-Jdk: 1.8.0_131
 Implementation-URL: http://projects.spring.io/spring-boot/CasperWorker
  /
 Created-By: Maven Integration for Eclipse

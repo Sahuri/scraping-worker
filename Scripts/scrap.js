@@ -1,4 +1,3 @@
-"use strict";
 var casper = require('casper').create();
 var elements;
 casper.start('http://goindonesia.com/id/hotels/indonesia/jawa/jakarta', function() {

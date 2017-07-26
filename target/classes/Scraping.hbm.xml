@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 26, 2017 8:46:52 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+ <class name="casper.model.Scraping" table="scraping">
+  <id name="id" type="int">
+   <column name="uid" not-null="true"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="Ota" type="java.lang.String">
+   <column name="ota"/>
+  </property>
+  <property generated="never" lazy="false" name="Hotel" type="java.lang.String">
+   <column name="hotel"/>
+  </property>
+  <property generated="never" lazy="false" name="Address" type="java.lang.String">
+   <column name="address"/>
+  </property>
+  <property generated="never" lazy="false" name="Room" type="java.lang.String">
+   <column name="room"/>
+  </property>
+  <property generated="never" lazy="false" name="Kodepos" type="java.lang.String">
+   <column name="kodepos"/>
+  </property>
+  <property generated="never" lazy="false" name="Area" type="java.lang.String">
+   <column name="area"/>
+  </property>
+  <property generated="never" lazy="false" name="Price" type="double">
+   <column name="price"/>
+  </property>
+  <property generated="never" lazy="false" name="ScrapingDate" type="java.util.Date">
+   <column name="scrapingdate"/>
+  </property>
+ </class>
+</hibernate-mapping>
